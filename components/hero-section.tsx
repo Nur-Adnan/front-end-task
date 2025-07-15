@@ -7,10 +7,10 @@ const HeroSection = () => {
   return (
     <div id="home" className="bg-[#ebddd5] ">
       {/* Hero Section */}
-      <section className="min-h-[120vh] flex items-center justify-center sm:p-8 relative overflow-hidden mr-24">
+      <section className="min-h-[120vh] flex items-center justify-center sm:p-8 relative overflow-hidden mr-24 ">
         {/* 🟨 Yellow diagonal background outside the card */}
 
-        <div className="absolute -top-[-5%] -right-[-14%] w-[580px] h-[750px] bg-yellow-400 z-10" />
+        <div className="absolute -top-[-5%] -right-[-14%] w-[580px] h-[750px] bg-yellow-400 z-10 sm:" />
 
         <div className="max-w-5xl w-full">
           <Card

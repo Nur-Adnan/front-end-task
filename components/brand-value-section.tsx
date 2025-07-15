@@ -7,11 +7,11 @@ const BrandValueSection = () => {
   return (
     <section
       id="brand"
-      className="min-h-screen bg-[#ddcfc6] flex items-center justify-center p-12 sm:p-8"
+      className="min-h-screen bg-[#ddcfc6] flex items-center justify-center p-4 sm:p-8 overflow-hidden"
     >
       <div className="relative w-full max-w-6xl h-[500px] sm:h-[600px] lg:h-[700px]">
         {/* Left Upper Image - Woman Working */}
-        <div className="absolute top-[-4rem] left-4 sm:left-8 lg:left-[5.5rem] w-64 sm:w-80 md:w-96 lg:w-[28rem] h-64 sm:h-80 md:h-96 lg:h-[28rem] overflow-hidden">
+        <div className="absolute top-[-4rem] left-2 sm:left-8 lg:left-[5.5rem] w-[85vw] sm:w-80 md:w-96 lg:w-[28rem] h-52 sm:h-80 md:h-96 lg:h-[28rem] overflow-hidden">
           <Image
             src="/women.jpg"
             alt="Woman working with laptop and taking notes"
@@ -22,7 +22,7 @@ const BrandValueSection = () => {
         </div>
 
         {/* Left Bottom Image - Laptop with Design */}
-        <div className="absolute bottom-[-0.8rem] left-[-4rem] w-full max-w-[400px] sm:max-w-[500px] lg:max-w-[600px] h-52 sm:h-64 md:h-72 lg:h-80 overflow-hidden">
+        <div className="absolute bottom-[-0.8rem] left-[-2rem] sm:left-[-4rem] w-[90vw] sm:max-w-[500px] lg:max-w-[600px] h-44 sm:h-64 md:h-72 lg:h-80 overflow-hidden">
           <Image
             src="/laptop.jpg"
             alt="Laptop showing design wireframes with coffee"
@@ -33,7 +33,7 @@ const BrandValueSection = () => {
         </div>
 
         {/* Right Side Image - Creative Workspace */}
-        <div className="absolute top-8 sm:top-16 lg:top-20 right-16 w-[340px] sm:w-[420px] md:w-[480px] lg:w-[540px] h-96 sm:h-[28rem] md:h-[32rem] lg:h-[36rem] overflow-hidden">
+        <div className="absolute top-12 right-2 sm:top-16 sm:right-8 lg:top-20 lg:right-16 w-[85vw] sm:w-[420px] md:w-[480px] lg:w-[540px] h-80 sm:h-[28rem] md:h-[32rem] lg:h-[36rem] overflow-hidden">
           <Image
             src="/design.jpg"
             alt="Creative workspace with laptop, mockups and design materials"
@@ -45,7 +45,7 @@ const BrandValueSection = () => {
 
         {/* Center Card */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30">
-          <Card className="bg-black/90 backdrop-blur-sm border border-gray-700 w-64 sm:w-72 lg:w-96 rounded-none">
+          <Card className="bg-black/90 backdrop-blur-sm border border-gray-700 w-[90vw] sm:w-72 lg:w-96 rounded-none">
             <CardContent className="p-6 lg:p-8 text-center space-y-4">
               <h2 className="text-white text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">
                 Brand Values
