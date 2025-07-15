@@ -5,21 +5,21 @@ const CalendarSection = () => {
   return (
     <section className="relative min-h-screen bg-[#ffb902] overflow-hidden flex flex-col lg:flex-row">
       {/* Left Image Full Height */}
-      <div className="relative w-full lg:w-1/2 h-64 lg:h-auto">
+      <div className="relative w-full lg:w-1/2 h-64 lg:h-auto sm:h-[30rem]">
         <Image
           src="/calendar-background.jpg"
           alt="Yellow workspace with calendar, keyboard and office supplies"
           fill
-          className="object-cover object-left-top"
+          className="object-cover object-left-top sm:object-center"
           priority
         />
       </div>
 
       {/* Right Text Content */}
-      <div className="relative w-full lg:w-1/2 flex items-center justify-center p-6 sm:p-12 lg:p-20 z-10">
+      <div className="relative w-full lg:w-1/2 flex items-center justify-center p-6 sm:p-6 lg:p-20 z-10">
         <div className="w-full max-w-xl rounded-lg p-6 lg:p-8">
           {/* Heading */}
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-white mb-4 lg:mb-6 leading-relaxed">
+          <h2 className="text-2xl sm:text-4xl lg:text-4xl xl:text-5xl font-bold text-white mb-4 lg:mb-6 leading-relaxed ">
             Construction and renovation projects
           </h2>
 
@@ -44,7 +44,7 @@ const CalendarSection = () => {
           {/* Button */}
           <Button
             variant="outline"
-            className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-black transition-all duration-300 px-6 lg:px-9 py-2 lg:py-6 text-xs sm:text-sm font-semibold tracking-wider uppercase rounded-md font-light"
+            className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-black transition-all duration-300 px-6 lg:px-9 py-2 lg:py-6 text-xs sm:text-sm tracking-wider uppercase rounded-md font-light"
           >
             CONTACT US
           </Button>
