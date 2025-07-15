@@ -35,21 +35,21 @@ const MockupSection = () => {
 
       {/* Content Overlay */}
       <div className="relative bg-[#e2d2c8] min-h-screen flex items-center justify-center lg:justify-end px-4 sm:px-6 lg:px-8 xl:px-12">
-        <div className="w-full max-w-sm sm:max-w-md lg:max-w-lg xl:max-w-xl space-y-4 lg:space-y-8 mr-72 z-20">
+        <div className="w-full max-w-sm sm:max-w-xs lg:max-w-lg xl:max-w-xl space-y-4 lg:space-y-8 z-20 mr-0 sm:mr-0 md:mr-0 lg:mr-72">
           {services.map((service, index) => (
             <Card
               key={index}
-              className="bg-white/95 backdrop-blur-sm border-0 shadow-md rounded-none pb-10 h-72 "
+              className="bg-white/95 backdrop-blur-sm border-0 shadow-md rounded-none pb-10 h-64 sm:h-52 lg:h-72"
             >
-              <CardContent className="p-4 sm:p-5 lg:p-6">
-                <h2 className="text-lg sm:text-xl lg:text-3xl font-bold text-gray-800 mb-3 lg:mb-4 leading-tight tracking-normal">
+              <CardContent className="p-2 sm:p-3 md:p-4 lg:p-6">
+                <h2 className="text-base sm:text-sm md:text-lg lg:text-3xl font-bold text-gray-800 mb-2 sm:mb-2 md:mb-3 lg:mb-4 leading-snug sm:leading-tight tracking-normal">
                   {service.title}
                 </h2>
-                <p className="text-gray-700 text-sm sm:text-base lg:text-lg leading-relaxed mb-3 lg:mb-4">
+                <p className="text-gray-700 text-xs sm:text-sm md:text-base lg:text-lg leading-relaxed sm:leading-normal mb-2 sm:mb-2 md:mb-3 lg:mb-4">
                   {service.description}
                 </p>
                 {index === 0 && (
-                  <p className="text-gray-600 text-xs sm:text-base py-4">
+                  <p className="text-gray-600 text-[10px] sm:text-xs md:text-sm py-2 sm:py-3">
                     Images from{" "}
                     <span className="underline underline-offset-2 cursor-pointer hover:text-gray-800 transition-colors font-medium">
                       Freepik
