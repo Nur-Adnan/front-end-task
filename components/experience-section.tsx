@@ -17,9 +17,14 @@ const ExperienceSection = () => {
       </div>
 
       {/* Content Overlay */}
-      <div className="relative z-10 min-h-screen flex items-end justify-start p-4 sm:p-6 lg:p-8 xl:py-16">
-        <Card className="absolute bg-white shadow-2xl border-0 max-w-md sm:max-w-lg lg:max-w-2xl xl:max-w-2xl w-full mb-4 sm:mb-6 lg:mb-8 scale-[1.05] py-16 left-64">
-          <CardContent className="p-8 sm:p-10 lg:p-12 space-y-8">
+      <div className="relative z-10 min-h-screen flex items-end justify-start p-4 sm:p-6 lg:p-8 xl:py-16 sm:mx-auto">
+        <Card
+          className="absolute bg-white shadow-2xl border-0 max-w-md sm:max-w-xs lg:max-w-2xl xl:max-w-2xl w-full mb-4 sm:mb-6 lg:mb-8 scale-[1.05] py-16 
+          sm:left-1/2 sm:-translate-x-1/2 
+          lg:left-64 lg:translate-x-0 
+          rounded-none"
+        >
+          <CardContent className="p-8 sm:px-6 sm:py-4 lg:p-12 space-y-8">
             {/* Main Content */}
             <div className="space-y-6 lg:space-y-8">
               {/* Main Heading */}
